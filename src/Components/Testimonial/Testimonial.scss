@@ -1,0 +1,35 @@
+.Testimonial{
+    background: url("../../assets/footerback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .testimonial-card{
+
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 2rem;
+        width: 100%;
+        max-width: 500px;
+        margin: 2rem auto;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .starts{
+           color: #fe9e0c;
+
+           svg{
+            margin: 5px;
+            font-size: 1.5rem;
+           }
+        }
+    }
+}

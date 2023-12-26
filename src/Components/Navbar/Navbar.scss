@@ -1,0 +1,137 @@
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    position: sticky;
+
+    .logo {
+        img {
+            width: 100px;
+        }
+    }
+
+    .links a {
+
+        color: #212529;
+        font-weight: 600;
+        padding: 0 .8rem;
+        margin-inline: 10px;
+        display: inline-block;
+        // transition: .2s linear;
+        padding-bottom: .4rem;
+        font-size: 1rem;
+        box-sizing: border-box;
+
+        &:hover {
+            border-bottom: 2px solid #212529;
+        }
+
+
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    svg {
+        font-size: 1.6rem;
+        color: #212529;
+    }
+
+    button {
+        display: inline-block;
+        background-color: white;
+        color: #212529;
+        padding: 10px 30px;
+        border-radius: 20px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        transition: .2s linear;
+        font-size: 1.1rem;
+        font-weight: 600;
+        word-spacing: 2px;
+
+        &:hover {
+            color: #ff9f0d;
+            background-color: black;
+            cursor: pointer;
+        }
+    }
+
+    .navicon {
+        width: 80px;
+        height: 80px;
+        transform: scale(0.5);
+        position: relative;
+        display: none;
+
+        span {
+            height: 10%;
+            display: inline-block;
+            width: 80%;
+            background-color: white;
+            border-radius: 10px;
+            transition: transform .3s linear;
+
+        }
+
+    }
+
+    .navactive span {
+        &:nth-child(1) {
+            position: relative;
+            transform: rotate(45deg);
+            transform-origin: left;
+        }
+
+        &:nth-child(2) {
+            visibility: hidden;
+        }
+
+        &:nth-child(3) {
+            position: relative;
+            transform: rotate(-45deg);
+            transform-origin: left;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .links {
+
+        .link,
+        svg,
+        button {
+            display: none;
+        }
+    }
+
+    .navicon{
+        display:block !important;
+    }
+}
+
+.mobile-links{
+    background-color: transparent;
+    padding-bottom: 1rem;
+    transition: .3s linear;
+    height: 0px;
+    overflow: hidden;
+
+   a{
+     display: block;
+     text-align: end;
+     padding: 10px 10%;
+     font-size: 1.5rem;
+     color: white;
+   }
+}
+
+.mobile-links.active{
+    height: 300px;
+}

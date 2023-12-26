@@ -1,0 +1,77 @@
+.about {
+    background: url("../../assets/middleback.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+
+    .left,
+    .right {
+        width: 50%;
+    }
+
+    .right {
+
+        >p {
+            color: #fe9e0c;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #464646;
+            padding-bottom: 12px;
+        }
+
+        .desc {
+            padding-bottom: 1rem;
+            color: #626262cb;
+
+            p {
+                padding-block: .5rem;
+                font-weight: 500;
+            }
+        }
+
+        .buttons {
+            .btn {
+                margin-right: 1rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .about {
+        flex-direction: column;
+
+        .left,
+        .right {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .about {
+        flex-direction: column;
+
+        .right {
+            .buttons {
+                .btn {
+                    margin-top: 1rem;
+                    font-size: 1.1rem;
+
+                }
+            }
+        }
+    }
+}

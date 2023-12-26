@@ -1,0 +1,58 @@
+.qustions{
+
+    .input-box{
+        margin: 2rem auto 4rem;
+        max-width: 800px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 30px;
+        padding: .7rem;
+        display: flex;
+        gap: 5%;
+
+        input{
+            flex: 1;
+            border: none;
+            padding-left: 1rem;
+            outline: none;
+            font-size: 1.3rem;
+
+
+            &::placeholder{
+                color: #595c5f;
+              
+            }
+        }
+
+        button{
+            background-color:#fe9e0c ;
+            color: white;
+            padding:10px 20px;
+            font-size: 1.5rem;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            width: 150px;
+            cursor: pointer;
+            transition: .3s linear;
+
+            &:hover{
+                opacity: .6;
+            }
+        }
+    }
+
+    @media (max-width:500px){
+        .input-box{
+
+            button{
+               font-size: 1rem;
+           }
+
+           input{
+            font-size: 1rem;
+           }
+        }
+
+
+    }
+}

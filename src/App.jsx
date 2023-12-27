@@ -3,23 +3,38 @@ import Header from "./Components/Header/Header"
 import About from "./Components/About/About"
 import Work from "./Components/Work/Work"
 import Menu from "./Components/Menu/Menu"
-import Title from "./Components/Title/Title"
 import Testimonial from "./Components/Testimonial/Testimonial"
 import Qustions from "./Components/Qustions/Qustions"
 import Footer from "./Components/Footer/Footer"
+import Loader from "./Components/Loader/Loader"
+import { useState } from "react"
 
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  window.onload = () => {
+    setLoading(false)
+  }
   return (
     <>
-      <Header />
-      <Card />
-      <About />
-      <Work />
-      <Menu />
-      <Testimonial />
-      <Qustions />
-      <Footer />
+      {
+        loading ?
+          <Loader /> :
+          <>
+            <Header />
+            <Card />
+            <About />
+            <Work />
+            <Menu />
+            <Testimonial />
+            <Qustions />
+            <Footer />
+          </>
+      }
+
+
     </>
   )
 }

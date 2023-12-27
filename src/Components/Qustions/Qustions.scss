@@ -55,4 +55,19 @@
 
 
     }
+    @media (max-width:400px){
+        .input-box{
+
+            button{
+               font-size: .8rem;
+               padding: 10px;
+           }
+
+           input{
+            font-size: .8rem;
+           }
+        }
+
+
+    }
 }

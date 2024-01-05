@@ -7,34 +7,21 @@ import Testimonial from "./Components/Testimonial/Testimonial"
 import Qustions from "./Components/Qustions/Qustions"
 import Footer from "./Components/Footer/Footer"
 import Loader from "./Components/Loader/Loader"
-import { useState } from "react"
+
 
 
 function App() {
 
-  const [loading, setLoading] = useState(true);
-
-  window.onload = () => {
-    setLoading(false)
-  }
   return (
     <>
-      {
-        loading ?
-          <Loader /> :
-          <>
-            <Header />
-            <Card />
-            <About />
-            <Work />
-            <Menu />
-            <Testimonial />
-            <Qustions />
-            <Footer />
-          </>
-      }
-
-
+      <Header />
+      <Card />
+      <About />
+      <Work />
+      <Menu />
+      <Testimonial />
+      <Qustions />
+      <Footer />
     </>
   )
 }

@@ -4,13 +4,14 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 70px;
    
 
     .container{
         display: flex;
         align-items:flex-start;
         justify-content: space-around;
-        padding: 2rem 5%;
+        padding: 3rem 5%;
 
         .right{
             img{
